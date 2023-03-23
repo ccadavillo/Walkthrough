@@ -1,27 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Stations
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-card-content>
+  <ion-card style="box-shadow: none;">
+    <ion-card-header>
+      <!--how to change size-->
+      <ion-img src="/assets/stations-imgs/geolocation.png"></ion-img>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large" class="ion-text-center">Stations</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <div class="ion-text-center">
+        <ion-card-title>Stations</ion-card-title>
+      </div>
+    
+    </ion-card-header>
+  </ion-card>
+</ion-card-content>
 
-  <ion-content [fullscreen]="true">
-  <ion-grid>
+
+<ion-card-content>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet" />
+  
+  <!--BUTTONS-->
+
+  <ion-grid [fixed]="true">
     <ion-row>
-      <ion-col size="6" size-md="4" size-lg="2">Gates</ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">Baggage Carousel</ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">Ticket Lobby</ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">Baggage Office</ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">TSA Traffic</ion-col>
-      <ion-col size="6" size-md="4" size-lg="2">aaa</ion-col>
+      <ion-col><ion-button routerLink="/gateareas">Gate Areas</ion-button></ion-col>
+      <ion-col><ion-button routerLink="/gateofthefuture">Gate of the Future</ion-button></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><ion-button routerLink="/baggageclaim">Baggage Claim</ion-button></ion-col>
+      <ion-col><ion-button routerLink="/baggageoffice">Baggage Office</ion-button></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col><ion-button routerLink="/tsatraffic">TSA Traffic</ion-button></ion-col>
+      <ion-col><ion-button routerLink="/ticketlobby">Ticket Lobby</ion-button></ion-col>     
     </ion-row>
   </ion-grid>
-</ion-content>
+</ion-card-content>
